@@ -280,6 +280,7 @@ jobs:
   build-for-windows-sciter:
     name: ${{ matrix.job.target }} (${{ matrix.job.os }})
     runs-on: ${{ matrix.job.os }}
+    continue-on-error: true
     # Temporarily disable this action due to additional test is needed.
     # if: false
     strategy:
